@@ -38,15 +38,15 @@ mavenNode{
       version = canaryVersion
     }
 
+	stage 'Bayesian Analysis'
+	resp = bayesianAnalysis()
+	echo(resp.token)
+
     stage 'Integration Test'
     mavenIntegrationTest {
       environment = 'Testing'
       failIfNoTests = localFailIfNoTests
       itestPattern = localItestPattern
     }
-	
-	stage 'Bayesian Analysis'
-	resp = bayesianAnalysis()
-	echo(resp.token)
   }
 }
