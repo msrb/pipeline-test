@@ -44,5 +44,9 @@ mavenNode{
       failIfNoTests = localFailIfNoTests
       itestPattern = localItestPattern
     }
+	
+	stage 'Bayesian Analysis'
+	resp = bayesianAnalysis()
+	echo(resp.token)
   }
 }
