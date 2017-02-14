@@ -1,0 +1,9 @@
+---
+buildName: "test2"
+links:
+  Git: "http://gogs/gogsadmin/test2.git"
+  Job: "http://192.168.42.57:31777/job/test2"
+  Testing: "http://10.0.0.21:80/kubernetes/pods?namespace=default-testing"
+environments:
+  Testing: "default-testing"
+useLocalFlow: true
