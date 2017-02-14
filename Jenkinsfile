@@ -38,9 +38,9 @@ mavenNode{
       version = canaryVersion
     }
 
-	stage 'Bayesian Analysis'
-	resp = bayesianAnalysis()
-	echo(resp.token)
+    stage 'Bayesian Analysis'
+    resp = bayesianAnalysis()
+    echo(resp.token)
 
     stage 'Integration Test'
     mavenIntegrationTest {
